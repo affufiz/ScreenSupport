@@ -566,19 +566,7 @@ a:focus {
     transform: none !important;
   }
 }
-html, body {
-  overflow-x: hidden !important;
-}
 
-* {
-  box-sizing: border-box;
-}
-section, header, footer, div {
-
-}
-.navbar {
- 
-}
 
 .offcanvas {
   max-width: 100vw !important;
@@ -602,6 +590,3 @@ section, header, footer, div {
   transition: opacity 0.5s ease;
 }
 
-.navbar {
-  z-index: 999 !important;
-}
