@@ -16,8 +16,8 @@ function loadFooter() {
                 <path fill="#fff" d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5z"/>
               </svg>
               <div id="footerLogo" class="ms-2">
-                <div class="main-title">GENIE..</div>
-                <div class="sub-title">TV SERVICES</div>
+                <div class="main-title">SCREEN..</div>
+                <div class="sub-title">SUPPORT SERVICES</div>
               </div>
             </div>
 
@@ -35,7 +35,7 @@ function loadFooter() {
 
           <!-- 2️⃣ Services -->
           <div class="col-lg-3 col-md-6 mb-3">
-            <h5 class="primaryfooterColor mb-4">TV Repair Services</h5>
+            <h5 class="primaryfooterColor mb-4">Repair Services</h5>
             <ul class="list-unstyled footer-list">
               <li><a href="#"><i class="fas fa-angle-right me-2 primaryfooterColor"></i>LED TV Repair</a></li>
               <li><a href="#"><i class="fas fa-angle-right me-2 primaryfooterColor"></i>Smart TV Repair</a></li>
@@ -106,7 +106,7 @@ function loadFooter() {
       <div class="footer-bottom py-3 mt-5">
         <p class="text-white opacity9 footerTextCss mb-0 display-31 letter-spacing-2 text-uppercase">
           © <script>document.write(new Date().getFullYear())</script> TV Services is Powered by 
-          <a href="#" class="primaryfooterColor">Genie TV Services</a>
+          <a href="#" class="primaryfooterColor">Screen Support</a>
         </p>
       </div>
     
