@@ -16,50 +16,50 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     processObserver.observe(processSection);
   }
 });
 
-const section = document.getElementById("whyChoose");
-const galleryItems = document.querySelectorAll(".gallery-item");
-const textContent = document.getElementById("textContent");
-let sectionVisible = false;
+// const section = document.getElementById("whyChoose");
+// const galleryItems = document.querySelectorAll(".gallery-item");
+// const textContent = document.getElementById("textContent");
+// let sectionVisible = false;
 
-if (section && galleryItems.length > 0 && textContent) {
-  const galleryObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !sectionVisible) {
-          sectionVisible = true;
+// if (section && galleryItems.length > 0 && textContent) {
+//   const galleryObserver = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting && !sectionVisible) {
+//           sectionVisible = true;
 
-          // Reduce initial delay from 600ms to 300ms
-          setTimeout(() => {
-            galleryItems.forEach((item, index) => {
-              // Reduce stagger delay from 200ms to 100ms
-              setTimeout(() => {
-                item.style.opacity = "1";
-                item.style.transform = "scale(1)";
-                item.style.transition = "all 0.6s ease";
-              }, index * 100);
-            });
+//           // Reduce initial delay from 600ms to 300ms
+//           setTimeout(() => {
+//             galleryItems.forEach((item, index) => {
+//               // Reduce stagger delay from 200ms to 100ms
+//               setTimeout(() => {
+//                 item.style.opacity = "1";
+//                 item.style.transform = "scale(1)";
+//                 item.style.transition = "all 0.6s ease";
+//               }, index * 100);
+//             });
 
-            // Reduce the delay before text appears (from galleryItems.length * 100 + 1000 to galleryItems.length * 80 + 600)
-            setTimeout(() => {
-              textContent.style.opacity = "1";
-              textContent.style.transform = "translateY(0)";
-            }, galleryItems.length * 80 + 600);
-          }, 300);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
+//             // Reduce the delay before text appears (from galleryItems.length * 100 + 1000 to galleryItems.length * 80 + 600)
+//             setTimeout(() => {
+//               textContent.style.opacity = "1";
+//               textContent.style.transform = "translateY(0)";
+//             }, galleryItems.length * 80 + 600);
+//           }, 300);
+//         }
+//       });
+//     },
+//     { threshold: 0.5 }
+//   );
 
-  galleryObserver.observe(section);
-}
+//   galleryObserver.observe(section);
+// }
 
 const loader = document.getElementById("loader-wrapper");
 const sequence = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -79,11 +79,10 @@ function animateCustomCounter(el, sequence, delay = 100) {
 function onPageLoadReady() {
   const elapsedTime = Date.now() - window.pageLoadStart;
   const remainingTime = Math.max(2000 - elapsedTime, 0);
- setTimeout(() => {
-  loader.classList.add("fade-out");
-  setTimeout(() => loader.style.display = "none", 500);
-}, remainingTime);
-
+  setTimeout(() => {
+    loader.classList.add("fade-out");
+    setTimeout(() => (loader.style.display = "none"), 500);
+  }, remainingTime);
 }
 
 window.pageLoadStart = Date.now();
@@ -102,7 +101,7 @@ $(document).ready(function () {
           }
         });
       },
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
     counterObserver.observe(counter);
   }
@@ -211,7 +210,7 @@ $(document).ready(function () {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
     cardObserver.observe(cardContainer);
   }
@@ -238,7 +237,7 @@ $(document).ready(function () {
         }
       });
     },
-    { threshold: 0.2 }
+    { threshold: 0.2 },
   );
   document.querySelectorAll(".fade-up-on-scroll").forEach((el) => {
     fadeObserver.observe(el);
@@ -259,7 +258,7 @@ $(document).ready(function () {
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.3 },
   );
 
   document
@@ -295,7 +294,7 @@ $(document).ready(function () {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     document.querySelectorAll(selector).forEach((el) => {
