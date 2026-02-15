@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | TV Repair Services</title>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/servicesSection.css" />
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <section
+      class="page-title-section"
+      style="
+        background: url('./assets/media/homePage/about.jpg') center/cover
+          no-repeat;
+      "
+    >
+      <div class="overlay"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="fw-bold mb-3 animate-fade-in">About Our TV Repair Services</h1>
+            <ul class="breadcrumb justify-content-center mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">About Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 animate-slide-left mb-4 mb-lg-0">
+          <img
+            src="./assets/media/Cards/dish2.jpg"
+            alt="TV Repair Team"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+
+        <div class="col-lg-6 animate-slide-right">
+          <h2 class="pageTitle">Who We Are</h2>
+
+          <p>
+            We are a dedicated team of certified technicians specializing exclusively
+            in professional TV repair services. With years of hands-on experience,
+            we provide reliable solutions for LED, LCD, OLED, and Smart TVs.
+          </p>
+
+          <p>
+            Our focus is simple — accurate diagnosis, quality repairs, genuine
+            replacement parts, and complete customer satisfaction. Whether it’s a
+            display issue, sound problem, or power failure, we bring your TV back
+            to life quickly and efficiently.
+          </p>
+
+          <ul class="about-list">
+            <li>Experienced & Certified TV Technicians</li>
+            <li>Fast Diagnosis & Same-Day Service</li>
+            <li>Support for All Major TV Brands</li>
+            <li>Affordable & Transparent Pricing</li>
+          </ul>
+
+          <a href="services.html" class="butn">
+            Explore Our TV Services <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Trust Us Section -->
+    <!-- <section class="container my-5">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-tv fa-2x mb-3 primaryColor"></i>
+          <h4>TV Repair Specialists</h4>
+          <p>
+            We focus only on television repair, allowing us to deliver expert-level service every time.
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-tools fa-2x mb-3 primaryColor"></i>
+          <h4>Advanced Repair Tools</h4>
+          <p>
+            We use professional diagnostic tools to identify issues accurately and fix them efficiently.
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-home fa-2x mb-3 primaryColor"></i>
+          <h4>Doorstep Service</h4>
+          <p>
+            Convenient home service ensures your TV is repaired without hassle or delay.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Counter Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".countup");
+
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-target");
+          let count = 0;
+          const speed = target / 200;
+
+          const updateCount = () => {
+            count += speed;
+            if (count < target) {
+              counter.innerText = Math.floor(count);
+              requestAnimationFrame(updateCount);
+            } else {
+              counter.innerText = target;
+            }
+          };
+
+          updateCount();
+        });
+      });
+    </script>
+
+    <!-- Footer Injection -->
+    <script src="./assets/js/Home/footer.js"></script>
+  </body>
+</html>

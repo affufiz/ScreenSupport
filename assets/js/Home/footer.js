@@ -1,0 +1,119 @@
+function loadFooter() {
+  document.getElementById("footer").innerHTML = `
+   <footer class="footer bg-img text-white d-flex flex-column justify-content-between"
+      style="background-image: url('./assets/media/AC/ac3.jpg');">
+      
+      <!-- Overlay -->
+      <div class="overlay"></div>
+
+      <div class="container flex-grow-1 d-flex align-items-center">
+        <div class="row gy-5 w-100">
+          
+          <!-- 1️⃣ Logo & About -->
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-logo-wrapper d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50">
+                <path fill="#fff" d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5z"/>
+              </svg>
+              <div id="footerLogo" class="ms-2">
+                <div class="main-title">GENIE..</div>
+                <div class="sub-title">TV SERVICES</div>
+              </div>
+            </div>
+
+            <p class="small lh-lg mt-4">
+              We specialize exclusively in professional TV repair services. From screen issues to power failures, we deliver fast, reliable, and affordable solutions for all major TV brands.
+            </p>
+
+            <ul class="list-inline footer-contact-icons mt-3">
+              <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- 2️⃣ Services -->
+          <div class="col-lg-3 col-md-6 mb-3">
+            <h5 class="primaryfooterColor mb-4">TV Repair Services</h5>
+            <ul class="list-unstyled footer-list">
+              <li><a href="#"><i class="fas fa-angle-right me-2 primaryfooterColor"></i>LED TV Repair</a></li>
+              <li><a href="#"><i class="fas fa-angle-right me-2 primaryfooterColor"></i>Smart TV Repair</a></li>
+              <li><a href="#"><i class="fas fa-angle-right me-2 primaryfooterColor"></i>Screen & Panel Repair</a></li>
+              <li><a href="#"><i class="fas fa-angle-right me-2 primaryfooterColor"></i>Audio & Power Repair</a></li>
+            </ul>
+          </div>
+
+          <!-- 3️⃣ Contact Info -->
+          <div class="col-lg-3 col-md-6 mb-3">
+            <h5 class="primaryfooterColor mb-4">Contact Us</h5>
+            <div class="footer-contact-info mb-3">
+              <address class="mb-2">105 Edington Drive, Roswell, GA 30076</address>
+              <a href="#" class="primaryfooterColor text-decoration-none">
+                <i class="fas fa-angle-right me-2"></i> Get Direction
+              </a>
+            </div>
+            <ul class="list-unstyled mt-4">
+              <li class="mb-2">
+                <a href="tel:+1234567890" class="text-white text-decoration-none">
+                  <i class="fas fa-phone me-2 primaryfooterColor"></i> +1 234 567 890
+                </a>
+              </li>
+              <li>
+                <a href="mailto:email@youraddress.com" class="text-white text-decoration-none">
+                  <i class="fas fa-envelope me-2 primaryfooterColor"></i> email@youraddress.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4️⃣ Free Estimate & Subscribe -->
+          <div class="col-lg-3 col-md-6 footer-contact-infoFree mb-3">
+            <div class="box position-relative p-3 rounded">
+              <h2 class="text-white fs-6 mb-0">
+                <span class="d-block small text-white">Get Free TV Repair Estimate</span>
+                <span style="font-size: 24px">+1 234 567 890</span>
+              </h2>
+              <span class="icon position-absolute top-50 end-0 translate-middle-y me-2">
+                <svg
+                  viewBox="0 0 320 512"
+                  width="40px"
+                  height="40px"
+                  class="fs-3 primaryfooterColor"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="#fff"
+                    d="M272 0H48C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48H272c26.5 0 48-21.5 48-48V48C320 21.5 298.5 0 272 0zM160 480a24 24 0 1 1 0-48 24 24 0 1 1 0 48zM288 400H32V80H288V400z"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <form class="newsletter-form mt-4">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Subscribe for TV service updates"/>
+                <button class="btn btn-primary" type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom py-3 mt-5">
+        <p class="text-white opacity9 footerTextCss mb-0 display-31 letter-spacing-2 text-uppercase">
+          © <script>document.write(new Date().getFullYear())</script> TV Services is Powered by 
+          <a href="#" class="primaryfooterColor">Genie TV Services</a>
+        </p>
+      </div>
+    
+   </footer>
+  `;
+}
+
+document.addEventListener("DOMContentLoaded", loadFooter);
